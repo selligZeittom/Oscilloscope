@@ -49,7 +49,6 @@
 "mdw/ugfx/src/gdisp/fonts/DejaVuSansBold12_aa.o"
 "mdw/ugfx/src/gdisp/fonts/LargeNumbers.o"
 "mdw/ugfx/src/gdisp/fonts/UI1.o"
-"mdw/ugfx/src/gdisp/fonts/UI2.o"
 "mdw/ugfx/src/gdisp/fonts/fixed_10x20.o"
 "mdw/ugfx/src/gdisp/fonts/fixed_5x8.o"
 "mdw/ugfx/src/gdisp/fonts/fixed_7x14.o"

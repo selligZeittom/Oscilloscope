@@ -127,7 +127,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="mdw/ugfx"/>
+						<entry excluding="src/gdisp/fonts/UI2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="mdw/ugfx"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="platform/f7-disco-gcc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 						<entry excluding="resources/dejavusans18_bold_dejavusans_bold18_aa.c|resources/dejavusans12_dejavusans12_aa.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="ui-gen"/>
@@ -246,7 +246,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="mdw/ugfx"/>
+						<entry excluding="src/gdisp/fonts/UI2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="mdw/ugfx"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="platform/f7-disco-gcc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 						<entry excluding="resources/dejavusans18_bold_dejavusans_bold18_aa.c|resources/dejavusans12_dejavusans12_aa.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="ui-gen"/>

@@ -19,7 +19,6 @@ C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/sr
 C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/DejaVuSansBold12_aa.c \
 C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/LargeNumbers.c \
 C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/UI1.c \
-C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/UI2.c \
 C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/fixed_10x20.c \
 C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/fixed_5x8.c \
 C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/fixed_7x14.c 
@@ -40,7 +39,6 @@ OBJS += \
 ./mdw/ugfx/src/gdisp/fonts/DejaVuSansBold12_aa.o \
 ./mdw/ugfx/src/gdisp/fonts/LargeNumbers.o \
 ./mdw/ugfx/src/gdisp/fonts/UI1.o \
-./mdw/ugfx/src/gdisp/fonts/UI2.o \
 ./mdw/ugfx/src/gdisp/fonts/fixed_10x20.o \
 ./mdw/ugfx/src/gdisp/fonts/fixed_5x8.o \
 ./mdw/ugfx/src/gdisp/fonts/fixed_7x14.o 
@@ -61,7 +59,6 @@ C_DEPS += \
 ./mdw/ugfx/src/gdisp/fonts/DejaVuSansBold12_aa.d \
 ./mdw/ugfx/src/gdisp/fonts/LargeNumbers.d \
 ./mdw/ugfx/src/gdisp/fonts/UI1.d \
-./mdw/ugfx/src/gdisp/fonts/UI2.d \
 ./mdw/ugfx/src/gdisp/fonts/fixed_10x20.d \
 ./mdw/ugfx/src/gdisp/fonts/fixed_5x8.d \
 ./mdw/ugfx/src/gdisp/fonts/fixed_7x14.d 
@@ -181,14 +178,6 @@ mdw/ugfx/src/gdisp/fonts/LargeNumbers.o: C:/Users/Gilles\ Mottiez/Documents/HES/
 	@echo ' '
 
 mdw/ugfx/src/gdisp/fonts/UI1.o: C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/UI1.c
-	@echo 'Building file: $<'
-	@echo 'Invoking: MCU GCC Compiler'
-	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/Inc" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/mdw/ugfx" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/mdw/ugfx/boards/base/STM32F746-Discovery" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/mdw/ugfx/drivers/gdisp/STM32LTDC" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/mdw/ugfx/src/gdisp/mcufont" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/ui-gen" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/platform/f7-disco-gcc/mcu" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/platform/f7-disco-gcc" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/mdw" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/xf/port" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/xf/include" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src/config" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/../src" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/Oscilloscope/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
-	@echo 'Finished building: $<'
-	@echo ' '
-
-mdw/ugfx/src/gdisp/fonts/UI2.o: C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw/ugfx/src/gdisp/fonts/UI2.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
