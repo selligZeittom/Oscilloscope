@@ -36,7 +36,7 @@
 #include "stm32f7xx_it.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "xf/xf.h"
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -53,7 +53,12 @@ extern TIM_HandleTypeDef htim1;
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
-
+#if (PORT_IDF_STM32CUBE != 0)
+	 if ((HAL_GetTick() % XF_tickIntervalInMilliseconds()) == 0)
+	  {
+	      XF_tick();
+	  }
+#endif
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   HAL_SYSTICK_IRQHandler();

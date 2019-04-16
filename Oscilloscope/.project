@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>Oscilloscope</name>
-	<comment />
+	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -25,4 +25,26 @@
 		<nature>fr.ac6.mcu.ide.core.MCUProjectNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>mdw</name>
+			<type>2</type>
+			<location>C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/mdw</location>
+		</link>
+		<link>
+			<name>platform</name>
+			<type>2</type>
+			<location>C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/platform</location>
+		</link>
+		<link>
+			<name>ui-gen</name>
+			<type>2</type>
+			<location>C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/ui-gen</location>
+		</link>
+		<link>
+			<name>xf</name>
+			<type>2</type>
+			<location>C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/xf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
