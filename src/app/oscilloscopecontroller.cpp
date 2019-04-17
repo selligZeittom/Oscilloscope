@@ -89,7 +89,7 @@ void OscilloscopeController::onButtonTimeMinusPressed()
 
 void OscilloscopeController::doShowAnalogSignal()
 {
-	// TODO: Call gui().drawGraphPoints() with the appropriate data.
+	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize, 1);
 }
 
 std::string OscilloscopeController::getText(oscilloscope::TDivValue tdivValue)

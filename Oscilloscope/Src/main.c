@@ -138,6 +138,7 @@ int main(void)
   //start adc manually, will be triggered by isr of timer 1 later
   //HAL_ADC_Start_IT(&hadc3);
 
+
   while (1)
   {
 

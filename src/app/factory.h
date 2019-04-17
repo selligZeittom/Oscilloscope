@@ -9,7 +9,7 @@
 #include "oscilloscopecontroller.h"
 #include "gui.h"
 
-#define ADC_VALUES_BUFFER_SIZE 500
+#define ADC_VALUES_BUFFER_SIZE 400
 
 using oscilloscope::Gui;
 
