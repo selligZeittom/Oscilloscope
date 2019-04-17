@@ -40,7 +40,8 @@
 #include "stm32f7xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "xf/xf.h"
+#include "app/factory.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -120,8 +121,14 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  XF_initialize(20);
+  Factory_initialize();
+
+  //build the relations between components
+  Factory_build();
+
   //start timer 1
-  HAL_TIM_OC_Start_IT(&htim1,TIM_CHANNEL_1);
+  //HAL_TIM_OC_Start_IT(&htim1,TIM_CHANNEL_1);
 
   /* USER CODE END 2 */
 
@@ -129,7 +136,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   //start adc manually, will be triggered by isr of timer 1 later
-  HAL_ADC_Start_IT(&hadc3);
+  //HAL_ADC_Start_IT(&hadc3);
 
   while (1)
   {
@@ -139,6 +146,9 @@ int main(void)
   /* USER CODE BEGIN 3 */
 	  //HAL_ADC_Start_IT(&hadc3);
 	  //HAL_Delay(2000);
+
+	  //xf execution
+	  XF_execOnce();
   }
   /* USER CODE END 3 */
 
@@ -352,6 +362,8 @@ static void MX_TIM1_Init(void)
 
   TIM_ClockConfigTypeDef sClockSourceConfig;
   TIM_MasterConfigTypeDef sMasterConfig;
+  TIM_OC_InitTypeDef sConfigOC;
+  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig;
 
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 84;
@@ -371,10 +383,43 @@ static void MX_TIM1_Init(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
+  if (HAL_TIM_OC_Init(&htim1) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_OC1;
   sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_OC4REF;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_ENABLE;
   if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sConfigOC.OCMode = TIM_OCMODE_TOGGLE;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+  if (HAL_TIM_OC_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+  sBreakDeadTimeConfig.DeadTime = 0;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+  sBreakDeadTimeConfig.BreakFilter = 0;
+  sBreakDeadTimeConfig.Break2State = TIM_BREAK2_DISABLE;
+  sBreakDeadTimeConfig.Break2Polarity = TIM_BREAK2POLARITY_HIGH;
+  sBreakDeadTimeConfig.Break2Filter = 0;
+  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+  if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }

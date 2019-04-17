@@ -4,17 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/xf/port/idf-stm32cube/port-functions.cpp 
+C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/app/interface/guiobserver.cpp 
 
 OBJS += \
-./xf/port/idf-stm32cube/port-functions.o 
+./app/interface/guiobserver.o 
 
 CPP_DEPS += \
-./xf/port/idf-stm32cube/port-functions.d 
+./app/interface/guiobserver.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-xf/port/idf-stm32cube/port-functions.o: C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/xf/port/idf-stm32cube/port-functions.cpp
+app/interface/guiobserver.o: C:/Users/Gilles\ Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/app/interface/guiobserver.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)

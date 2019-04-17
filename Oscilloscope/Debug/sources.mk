@@ -27,6 +27,8 @@ CPP_DEPS :=
 SUBDIRS := \
 Drivers/STM32F7xx_HAL_Driver/Src \
 Src \
+app \
+app/interface \
 mdw/ugfx/boards/base/STM32F746-Discovery \
 mdw/ugfx/drivers/gdisp/STM32LTDC \
 mdw/ugfx/drivers/ginput/touch/FT5336 \

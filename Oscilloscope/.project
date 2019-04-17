@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>Oscilloscope</name>
-	<comment></comment>
+	<comment />
 	<projects>
 	</projects>
 	<buildSpec>
@@ -26,6 +26,16 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>app</name>
+			<type>2</type>
+			<location>C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/app</location>
+		</link>
+		<link>
+			<name>config</name>
+			<type>2</type>
+			<location>C:/Users/Gilles Mottiez/Documents/HES/I5_6/PTR/RealTimeEmbedded/src/config</location>
+		</link>
 		<link>
 			<name>mdw</name>
 			<type>2</type>

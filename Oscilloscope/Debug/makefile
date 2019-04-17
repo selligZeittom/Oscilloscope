@@ -38,6 +38,8 @@ RM := rm -rf
 -include mdw/ugfx/drivers/ginput/touch/FT5336/subdir.mk
 -include mdw/ugfx/drivers/gdisp/STM32LTDC/subdir.mk
 -include mdw/ugfx/boards/base/STM32F746-Discovery/subdir.mk
+-include app/interface/subdir.mk
+-include app/subdir.mk
 -include Src/subdir.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk
 -include subdir.mk

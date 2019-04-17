@@ -9,25 +9,32 @@
 #include "oscilloscopecontroller.h"
 #include "gui.h"
 
+#define ADC_VALUES_BUFFER_SIZE 500
+
 using oscilloscope::Gui;
 
 /**
  * @brief Factory creating all objects/components and relations between them.
  */
-class Factory
-{
+
+//they are defined inside the isrs.cpp file
+extern "C" uint16_t adcValuesBuffer[];
+extern "C" uint32_t indexArray;
+
+class Factory {
 public:
-    Factory();                          ///< Constructor
+	Factory();                          ///< Constructor
 
-    static void initialize();           ///< Initializes the factory
-    static void build();                ///< Creates components and initializes relations
+	static void initialize();           ///< Initializes the factory
+	static void build();       ///< Creates components and initializes relations
 
-    static OscilloscopeController & getOscilloscopeController();
-    static Gui & getGui();
+	static OscilloscopeController & getOscilloscopeController();
+	static Gui & getGui();
 
 protected:
-    static OscilloscopeController _oscilloscopeController;
-    static Gui _gui;
+	static OscilloscopeController _oscilloscopeController;
+	static Gui _gui;
+
 };
 
 #endif // __cplusplus

@@ -26,7 +26,7 @@ Factory::Factory()
 // static
 void Factory::initialize()
 {
-//    getOscilloscopeController().initialize(getGui(), adcValuesBuffer, ADC_VALUES_BUFFER_SIZE);
+    getOscilloscopeController().initialize(getGui(), adcValuesBuffer, ADC_VALUES_BUFFER_SIZE);
     getGui().initialize();
 }
 
