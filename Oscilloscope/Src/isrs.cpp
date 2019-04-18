@@ -8,7 +8,7 @@ extern "C" {
 
 extern "C" void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 	volatile uint32_t value = HAL_ADC_GetValue(hadc);
-	HAL_GPIO_TogglePin(GPIOF, GPIO_PIN_9);
+	//HAL_GPIO_TogglePin(GPIOF, GPIO_PIN_9);
 	adcValuesBuffer[indexArray++] = value; //store read value inside array
 	if(indexArray == ADC_VALUES_BUFFER_SIZE-1)
 	{
