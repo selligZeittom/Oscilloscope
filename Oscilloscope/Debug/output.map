@@ -34833,231 +34833,231 @@ LOAD c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.20170831155
  .igot.plt      0x200000a4        0x0 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv5-sp/hard/crtbegin.o
                 0x200000a4                . = ALIGN (0x4)
 
-.bss            0x200000a4    0x16a74 load address 0x0801372c
+.bss            0x200000a4    0x12424 load address 0x0801372c
                 0x200000a4                _sbss = .
                 0x200000a4                __bss_start__ = _sbss
  *(.bss)
  .bss           0x200000a4       0x1c c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv5-sp/hard/crtbegin.o
- .bss           0x200000c0     0x4e24 Src/isrs.o
+ .bss           0x200000c0      0x7d4 Src/isrs.o
                 0x200000c0                indexArray
                 0x200000c4                adcValuesBuffer
- .bss           0x20004ee4        0x8 Src/stm32f7xx_hal_msp.o
- .bss           0x20004eec       0x44 app/factory.o
-                0x20004eec                Factory::_oscilloscopeController
-                0x20004f18                Factory::_gui
- .bss           0x20004f30      0x830 app/gui.o
-                0x20004f30                oscilloscope::gl
- .bss           0x20005760       0x90 app/oscilloscopecontroller.o
-                0x20005760                OscilloscopeController::_tdivOptions
-                0x200057ec                OscilloscopeController::_pInstance
- .bss           0x200057f0       0x60 mdw/ugfx/boards/base/STM32F746-Discovery/stm32f746g_discovery_sdram.o
- .bss           0x20005850        0x4 mdw/ugfx/src/gdisp/gdisp_fonts.o
- .bss           0x20005854        0x8 mdw/ugfx/src/gdriver/gdriver.o
- .bss           0x2000585c      0x204 mdw/ugfx/src/gevent/gevent.o
- .bss           0x20005a60       0x60 mdw/ugfx/src/gfile/gfile.o
- .bss           0x20005ac0        0x1 mdw/ugfx/src/gfx.o
- *fill*         0x20005ac1        0x3 
- .bss           0x20005ac4       0x1c mdw/ugfx/src/ginput/ginput_mouse.o
- .bss           0x20005ae0     0xfa04 mdw/ugfx/src/gos/gos_x_heap.o
- .bss           0x200154e4       0x28 mdw/ugfx/src/gos/gos_x_threads.o
- .bss           0x2001550c     0x1014 mdw/ugfx/src/gtimer/gtimer.o
- .bss           0x20016520        0x8 mdw/ugfx/src/gwin/gwin.o
- .bss           0x20016528       0x30 mdw/ugfx/src/gwin/gwin_widget.o
- .bss           0x20016558       0x29 mdw/ugfx/src/gwin/gwin_wm.o
- *fill*         0x20016581        0x3 
- .bss           0x20016584      0x18f platform/f7-disco-gcc/board/trace.o
- *fill*         0x20016713        0x1 
- .bss           0x20016714        0x8 platform/f7-disco-gcc/mcu/critical/critical.o
-                0x20016714                bInISR
-                0x20016718                bOMEnterCriticalRegionNested
- .bss           0x2001671c        0xf platform/f7-disco-gcc/mcu/hal/uart.o
-                0x2001671c                Uart::_sUart
-                0x20016728                Uart::_sInitialized
- *fill*         0x2001672b        0x1 
- .bss           0x2001672c       0x18 ui-gen/resources_manager.o
- .bss           0x20016744       0x48 xf/port/default/resourcefactory-default.o
- .bss           0x2001678c       0x1c xf/port/default/timeoutmanager-default.o
- .bss           0x200167a8        0x2 xf/port/default/xf-default.o
-                0x200167a8                XF::_bInitialized
+ .bss           0x20000894        0x8 Src/stm32f7xx_hal_msp.o
+ .bss           0x2000089c       0x44 app/factory.o
+                0x2000089c                Factory::_oscilloscopeController
+                0x200008c8                Factory::_gui
+ .bss           0x200008e0      0x830 app/gui.o
+                0x200008e0                oscilloscope::gl
+ .bss           0x20001110       0x90 app/oscilloscopecontroller.o
+                0x20001110                OscilloscopeController::_tdivOptions
+                0x2000119c                OscilloscopeController::_pInstance
+ .bss           0x200011a0       0x60 mdw/ugfx/boards/base/STM32F746-Discovery/stm32f746g_discovery_sdram.o
+ .bss           0x20001200        0x4 mdw/ugfx/src/gdisp/gdisp_fonts.o
+ .bss           0x20001204        0x8 mdw/ugfx/src/gdriver/gdriver.o
+ .bss           0x2000120c      0x204 mdw/ugfx/src/gevent/gevent.o
+ .bss           0x20001410       0x60 mdw/ugfx/src/gfile/gfile.o
+ .bss           0x20001470        0x1 mdw/ugfx/src/gfx.o
+ *fill*         0x20001471        0x3 
+ .bss           0x20001474       0x1c mdw/ugfx/src/ginput/ginput_mouse.o
+ .bss           0x20001490     0xfa04 mdw/ugfx/src/gos/gos_x_heap.o
+ .bss           0x20010e94       0x28 mdw/ugfx/src/gos/gos_x_threads.o
+ .bss           0x20010ebc     0x1014 mdw/ugfx/src/gtimer/gtimer.o
+ .bss           0x20011ed0        0x8 mdw/ugfx/src/gwin/gwin.o
+ .bss           0x20011ed8       0x30 mdw/ugfx/src/gwin/gwin_widget.o
+ .bss           0x20011f08       0x29 mdw/ugfx/src/gwin/gwin_wm.o
+ *fill*         0x20011f31        0x3 
+ .bss           0x20011f34      0x18f platform/f7-disco-gcc/board/trace.o
+ *fill*         0x200120c3        0x1 
+ .bss           0x200120c4        0x8 platform/f7-disco-gcc/mcu/critical/critical.o
+                0x200120c4                bInISR
+                0x200120c8                bOMEnterCriticalRegionNested
+ .bss           0x200120cc        0xf platform/f7-disco-gcc/mcu/hal/uart.o
+                0x200120cc                Uart::_sUart
+                0x200120d8                Uart::_sInitialized
+ *fill*         0x200120db        0x1 
+ .bss           0x200120dc       0x18 ui-gen/resources_manager.o
+ .bss           0x200120f4       0x48 xf/port/default/resourcefactory-default.o
+ .bss           0x2001213c       0x1c xf/port/default/timeoutmanager-default.o
+ .bss           0x20012158        0x2 xf/port/default/xf-default.o
+                0x20012158                XF::_bInitialized
  *(.bss*)
- *fill*         0x200167aa        0x2 
+ *fill*         0x2001215a        0x2 
  .bss._ZN12_GLOBAL__N_113__new_handlerE
-                0x200167ac        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(new_handler.o)
+                0x2001215c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(new_handler.o)
  .bss._ZGVNSt7collateIcE2idE
-                0x200167b0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167b0                guard variable for std::collate<char>::id
+                0x20012160        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012160                guard variable for std::collate<char>::id
  .bss._ZGVNSt8messagesIcE2idE
-                0x200167b4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167b4                guard variable for std::messages<char>::id
+                0x20012164        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012164                guard variable for std::messages<char>::id
  .bss._ZGVNSt8time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x200167b8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167b8                guard variable for std::time_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
+                0x20012168        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012168                guard variable for std::time_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt8time_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x200167bc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167bc                guard variable for std::time_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
+                0x2001216c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x2001216c                guard variable for std::time_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt11__timepunctIcE2idE
-                0x200167c0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167c0                guard variable for std::__timepunct<char>::id
+                0x20012170        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012170                guard variable for std::__timepunct<char>::id
  .bss._ZGVNSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x200167c4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167c4                guard variable for std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
+                0x20012174        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012174                guard variable for std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x200167c8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167c8                guard variable for std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
+                0x20012178        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012178                guard variable for std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt8numpunctIcE2idE
-                0x200167cc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167cc                guard variable for std::numpunct<char>::id
+                0x2001217c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x2001217c                guard variable for std::numpunct<char>::id
  .bss._ZGVNSt9money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x200167d0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167d0                guard variable for std::money_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
+                0x20012180        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012180                guard variable for std::money_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x200167d4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167d4                guard variable for std::money_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
+                0x20012184        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012184                guard variable for std::money_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt10moneypunctIcLb1EE2idE
-                0x200167d8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167d8                guard variable for std::moneypunct<char, true>::id
+                0x20012188        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x20012188                guard variable for std::moneypunct<char, true>::id
  .bss._ZGVNSt10moneypunctIcLb0EE2idE
-                0x200167dc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
-                0x200167dc                guard variable for std::moneypunct<char, false>::id
+                0x2001218c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(locale-inst.o)
+                0x2001218c                guard variable for std::moneypunct<char, false>::id
  .bss._ZGVNSt7collateIwE2idE
-                0x200167e0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167e0                guard variable for std::collate<wchar_t>::id
+                0x20012190        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x20012190                guard variable for std::collate<wchar_t>::id
  .bss._ZGVNSt8messagesIwE2idE
-                0x200167e4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167e4                guard variable for std::messages<wchar_t>::id
+                0x20012194        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x20012194                guard variable for std::messages<wchar_t>::id
  .bss._ZGVNSt8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x200167e8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167e8                guard variable for std::time_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x20012198        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x20012198                guard variable for std::time_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt8time_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x200167ec        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167ec                guard variable for std::time_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x2001219c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x2001219c                guard variable for std::time_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt11__timepunctIwE2idE
-                0x200167f0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167f0                guard variable for std::__timepunct<wchar_t>::id
+                0x200121a0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121a0                guard variable for std::__timepunct<wchar_t>::id
  .bss._ZGVNSt7num_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x200167f4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167f4                guard variable for std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121a4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121a4                guard variable for std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt7num_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x200167f8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167f8                guard variable for std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121a8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121a8                guard variable for std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt8numpunctIwE2idE
-                0x200167fc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x200167fc                guard variable for std::numpunct<wchar_t>::id
+                0x200121ac        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121ac                guard variable for std::numpunct<wchar_t>::id
  .bss._ZGVNSt9money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x20016800        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x20016800                guard variable for std::money_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121b0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121b0                guard variable for std::money_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt9money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x20016804        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x20016804                guard variable for std::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121b4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121b4                guard variable for std::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt10moneypunctIwLb1EE2idE
-                0x20016808        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x20016808                guard variable for std::moneypunct<wchar_t, true>::id
+                0x200121b8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121b8                guard variable for std::moneypunct<wchar_t, true>::id
  .bss._ZGVNSt10moneypunctIwLb0EE2idE
-                0x2001680c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
-                0x2001680c                guard variable for std::moneypunct<wchar_t, false>::id
+                0x200121bc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(wlocale-inst.o)
+                0x200121bc                guard variable for std::moneypunct<wchar_t, false>::id
  .bss._ZGVNSt7__cxx117collateIwE2idE
-                0x20016810        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x20016810                guard variable for std::__cxx11::collate<wchar_t>::id
+                0x200121c0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121c0                guard variable for std::__cxx11::collate<wchar_t>::id
  .bss._ZGVNSt7__cxx118messagesIwE2idE
-                0x20016814        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x20016814                guard variable for std::__cxx11::messages<wchar_t>::id
+                0x200121c4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121c4                guard variable for std::__cxx11::messages<wchar_t>::id
  .bss._ZGVNSt7__cxx118time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x20016818        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x20016818                guard variable for std::__cxx11::time_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121c8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121c8                guard variable for std::__cxx11::time_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt7__cxx118numpunctIwE2idE
-                0x2001681c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x2001681c                guard variable for std::__cxx11::numpunct<wchar_t>::id
+                0x200121cc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121cc                guard variable for std::__cxx11::numpunct<wchar_t>::id
  .bss._ZGVNSt7__cxx119money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x20016820        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x20016820                guard variable for std::__cxx11::money_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121d0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121d0                guard variable for std::__cxx11::money_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt7__cxx119money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE2idE
-                0x20016824        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x20016824                guard variable for std::__cxx11::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
+                0x200121d4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121d4                guard variable for std::__cxx11::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::id
  .bss._ZGVNSt7__cxx1110moneypunctIwLb1EE2idE
-                0x20016828        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x20016828                guard variable for std::__cxx11::moneypunct<wchar_t, true>::id
+                0x200121d8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121d8                guard variable for std::__cxx11::moneypunct<wchar_t, true>::id
  .bss._ZGVNSt7__cxx1110moneypunctIwLb0EE2idE
-                0x2001682c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
-                0x2001682c                guard variable for std::__cxx11::moneypunct<wchar_t, false>::id
+                0x200121dc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x200121dc                guard variable for std::__cxx11::moneypunct<wchar_t, false>::id
  .bss._ZGVNSt7__cxx117collateIcE2idE
-                0x20016830        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x20016830                guard variable for std::__cxx11::collate<char>::id
+                0x200121e0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121e0                guard variable for std::__cxx11::collate<char>::id
  .bss._ZGVNSt7__cxx118messagesIcE2idE
-                0x20016834        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x20016834                guard variable for std::__cxx11::messages<char>::id
+                0x200121e4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121e4                guard variable for std::__cxx11::messages<char>::id
  .bss._ZGVNSt7__cxx118time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x20016838        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x20016838                guard variable for std::__cxx11::time_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
+                0x200121e8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121e8                guard variable for std::__cxx11::time_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt7__cxx118numpunctIcE2idE
-                0x2001683c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x2001683c                guard variable for std::__cxx11::numpunct<char>::id
+                0x200121ec        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121ec                guard variable for std::__cxx11::numpunct<char>::id
  .bss._ZGVNSt7__cxx119money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x20016840        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x20016840                guard variable for std::__cxx11::money_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
+                0x200121f0        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121f0                guard variable for std::__cxx11::money_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt7__cxx119money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE2idE
-                0x20016844        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x20016844                guard variable for std::__cxx11::money_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
+                0x200121f4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121f4                guard variable for std::__cxx11::money_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::id
  .bss._ZGVNSt7__cxx1110moneypunctIcLb1EE2idE
-                0x20016848        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x20016848                guard variable for std::__cxx11::moneypunct<char, true>::id
+                0x200121f8        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121f8                guard variable for std::__cxx11::moneypunct<char, true>::id
  .bss._ZGVNSt7__cxx1110moneypunctIcLb0EE2idE
-                0x2001684c        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x2001684c                guard variable for std::__cxx11::moneypunct<char, false>::id
+                0x200121fc        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x200121fc                guard variable for std::__cxx11::moneypunct<char, false>::id
  .bss.__malloc_free_list
-                0x20016850        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20016850                __malloc_free_list
+                0x20012200        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20012200                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x20016854        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20016854                __malloc_sbrk_start
+                0x20012204        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20012204                __malloc_sbrk_start
  .bss.heap_end.5239
-                0x20016858        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libnosys.a(sbrk.o)
+                0x20012208        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libnosys.a(sbrk.o)
  *(COMMON)
- COMMON         0x2001685c        0x4 Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
-                0x2001685c                uwTick
- COMMON         0x20016860      0x254 Src/main.o
-                0x20016860                hltdc
-                0x20016908                hdma2d
-                0x20016948                huart1
-                0x200169b8                hadc3
-                0x20016a00                hsdram1
-                0x20016a34                htim6
-                0x20016a74                htim1
- COMMON         0x20016ab4        0x4 mdw/ugfx/src/gdisp/gdisp.o
-                0x20016ab4                GDISP
- COMMON         0x20016ab8        0x4 mdw/ugfx/src/gos/gos_x_threads.o
-                0x20016ab8                _gfxCurrentThread
- COMMON         0x20016abc        0x5 mdw/ugfx/src/gwin/gwin_wm.o
-                0x20016abc                _GWINwm
-                0x20016ac0                _gwinFlashState
- *fill*         0x20016ac1        0x3 
- COMMON         0x20016ac4       0x20 ui-gen/gui.o
-                0x20016ac4                ghRedLed
-                0x20016ac8                ghLabelTimeDiv
-                0x20016acc                ghLabelTitle
-                0x20016ad0                ghPushButtonTimePlus
-                0x20016ad4                ghPageContainerDp_oscilloscope
-                0x20016ad8                ghPushButtonTimeMinus
-                0x20016adc                ghGraph
-                0x20016ae0                ghPushButtonTrigger
- COMMON         0x20016ae4       0x30 ui-gen/resources_manager.o
-                0x20016ae4                imgledredon
-                0x20016afc                imgledredoff
- COMMON         0x20016b14        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libc_nano.a(lib_a-reent.o)
-                0x20016b14                errno
-                0x20016b18                . = ALIGN (0x4)
-                0x20016b18                _ebss = .
-                0x20016b18                __bss_end__ = _ebss
+ COMMON         0x2001220c        0x4 Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+                0x2001220c                uwTick
+ COMMON         0x20012210      0x254 Src/main.o
+                0x20012210                hltdc
+                0x200122b8                hdma2d
+                0x200122f8                huart1
+                0x20012368                hadc3
+                0x200123b0                hsdram1
+                0x200123e4                htim6
+                0x20012424                htim1
+ COMMON         0x20012464        0x4 mdw/ugfx/src/gdisp/gdisp.o
+                0x20012464                GDISP
+ COMMON         0x20012468        0x4 mdw/ugfx/src/gos/gos_x_threads.o
+                0x20012468                _gfxCurrentThread
+ COMMON         0x2001246c        0x5 mdw/ugfx/src/gwin/gwin_wm.o
+                0x2001246c                _GWINwm
+                0x20012470                _gwinFlashState
+ *fill*         0x20012471        0x3 
+ COMMON         0x20012474       0x20 ui-gen/gui.o
+                0x20012474                ghRedLed
+                0x20012478                ghLabelTimeDiv
+                0x2001247c                ghLabelTitle
+                0x20012480                ghPushButtonTimePlus
+                0x20012484                ghPageContainerDp_oscilloscope
+                0x20012488                ghPushButtonTimeMinus
+                0x2001248c                ghGraph
+                0x20012490                ghPushButtonTrigger
+ COMMON         0x20012494       0x30 ui-gen/resources_manager.o
+                0x20012494                imgledredon
+                0x200124ac                imgledredoff
+ COMMON         0x200124c4        0x4 c:/stm32/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard\libc_nano.a(lib_a-reent.o)
+                0x200124c4                errno
+                0x200124c8                . = ALIGN (0x4)
+                0x200124c8                _ebss = .
+                0x200124c8                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20016b18     0x2000 load address 0x0801372c
-                0x20016b18                . = ALIGN (0x8)
-                0x20016b18                PROVIDE (end, .)
+                0x200124c8     0x2000 load address 0x0801372c
+                0x200124c8                . = ALIGN (0x8)
+                0x200124c8                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
-                0x20017b18                . = (. + _Min_Heap_Size)
- *fill*         0x20016b18     0x1000 
-                0x20018b18                . = (. + _Min_Stack_Size)
- *fill*         0x20017b18     0x1000 
-                0x20018b18                . = ALIGN (0x8)
+                0x200134c8                . = (. + _Min_Heap_Size)
+ *fill*         0x200124c8     0x1000 
+                0x200144c8                . = (. + _Min_Stack_Size)
+ *fill*         0x200134c8     0x1000 
+                0x200144c8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -36162,7 +36162,7 @@ OUTPUT(Oscilloscope.elf elf32-littlearm)
  .debug_line    0x000427fa      0xc27 xf/port/default/xf-default.o
  .debug_line    0x00043421     0x1509 xf/port/idf-stm32cube/port-functions.o
 
-.debug_str      0x00000000   0x11cba7
+.debug_str      0x00000000   0x11cba6
  .debug_str     0x00000000    0xee70f Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
                               0xeeb82 (size before relaxing)
  .debug_str     0x000ee70f      0x5a5 Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o
@@ -36193,121 +36193,121 @@ OUTPUT(Oscilloscope.elf elf32-littlearm)
                               0xeec5b (size before relaxing)
  .debug_str     0x000f2d65      0x394 Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
                               0xee681 (size before relaxing)
- .debug_str     0x000f30f9     0xac76 Src/isrs.o
-                              0xf933e (size before relaxing)
- .debug_str     0x000fdd6f      0x12e Src/main.o
+ .debug_str     0x000f30f9     0xac75 Src/isrs.o
+                              0xf933d (size before relaxing)
+ .debug_str     0x000fdd6e      0x12e Src/main.o
                               0xf0000 (size before relaxing)
- .debug_str     0x000fde9d       0x69 Src/stm32f7xx_hal_msp.o
+ .debug_str     0x000fde9c       0x69 Src/stm32f7xx_hal_msp.o
                               0xef64c (size before relaxing)
- .debug_str     0x000fdf06       0x71 Src/stm32f7xx_it.o
+ .debug_str     0x000fdf05       0x71 Src/stm32f7xx_it.o
                               0xee7f6 (size before relaxing)
- .debug_str     0x000fdf77       0x5a Src/system_stm32f7xx.o
+ .debug_str     0x000fdf76       0x5a Src/system_stm32f7xx.o
                               0xee212 (size before relaxing)
- .debug_str     0x000fdfd1      0x6fe app/factory.o
-                              0xf9cb2 (size before relaxing)
- .debug_str     0x000fe6cf     0x545c app/gui.o
+ .debug_str     0x000fdfd0      0x6fe app/factory.o
+                              0xf9cb1 (size before relaxing)
+ .debug_str     0x000fe6ce     0x545c app/gui.o
                               0xfeaf3 (size before relaxing)
- .debug_str     0x00103b2b      0xff8 app/oscilloscopecontroller.o
+ .debug_str     0x00103b2a      0xff8 app/oscilloscopecontroller.o
                               0xff40b (size before relaxing)
- .debug_str     0x00104b23      0x60d mdw/ugfx/boards/base/STM32F746-Discovery/stm32f746g_discovery_sdram.o
+ .debug_str     0x00104b22      0x60d mdw/ugfx/boards/base/STM32F746-Discovery/stm32f746g_discovery_sdram.o
                               0xf50a6 (size before relaxing)
- .debug_str     0x00105130       0xca mdw/ugfx/boards/base/STM32F746-Discovery/stm32f746g_raw32_ugfx.o
+ .debug_str     0x0010512f       0xca mdw/ugfx/boards/base/STM32F746-Discovery/stm32f746g_raw32_ugfx.o
                               0xf3eab (size before relaxing)
- .debug_str     0x001051fa      0x149 mdw/ugfx/boards/base/STM32F746-Discovery/stm32f7_i2c.o
+ .debug_str     0x001051f9      0x149 mdw/ugfx/boards/base/STM32F746-Discovery/stm32f7_i2c.o
                               0xf3ecb (size before relaxing)
- .debug_str     0x00105343     0x229c mdw/ugfx/drivers/gdisp/STM32LTDC/gdisp_lld_STM32LTDC.o
+ .debug_str     0x00105342     0x229c mdw/ugfx/drivers/gdisp/STM32LTDC/gdisp_lld_STM32LTDC.o
                               0xf63d3 (size before relaxing)
- .debug_str     0x001075df     0x132e mdw/ugfx/drivers/ginput/touch/FT5336/gmouse_lld_FT5336.o
+ .debug_str     0x001075de     0x132e mdw/ugfx/drivers/ginput/touch/FT5336/gmouse_lld_FT5336.o
                               0xf52ce (size before relaxing)
- .debug_str     0x0010890d     0x107c mdw/ugfx/src/gdisp/gdisp.o
+ .debug_str     0x0010890c     0x107c mdw/ugfx/src/gdisp/gdisp.o
                                0xabe8 (size before relaxing)
- .debug_str     0x00109989      0x168 mdw/ugfx/src/gdisp/gdisp_fonts.o
+ .debug_str     0x00109988      0x168 mdw/ugfx/src/gdisp/gdisp_fonts.o
                                0x99b2 (size before relaxing)
- .debug_str     0x00109af1      0x92d mdw/ugfx/src/gdisp/gdisp_image.o
+ .debug_str     0x00109af0      0x92d mdw/ugfx/src/gdisp/gdisp_image.o
                                0x9e14 (size before relaxing)
- .debug_str     0x0010a41e      0x7a6 mdw/ugfx/src/gdisp/gdisp_image_png.o
+ .debug_str     0x0010a41d      0x7a6 mdw/ugfx/src/gdisp/gdisp_image_png.o
                                0xa497 (size before relaxing)
- .debug_str     0x0010abc4       0x90 mdw/ugfx/src/gdisp/mcufont/mf_encoding.o
+ .debug_str     0x0010abc3       0x90 mdw/ugfx/src/gdisp/mcufont/mf_encoding.o
                                0x96b4 (size before relaxing)
- .debug_str     0x0010ac54      0x6d2 mdw/ugfx/src/gdisp/mcufont/mf_font.o
+ .debug_str     0x0010ac53      0x6d2 mdw/ugfx/src/gdisp/mcufont/mf_font.o
                                0x9f66 (size before relaxing)
- .debug_str     0x0010b326       0xfd mdw/ugfx/src/gdisp/mcufont/mf_justify.o
+ .debug_str     0x0010b325       0xfd mdw/ugfx/src/gdisp/mcufont/mf_justify.o
                                0x99ab (size before relaxing)
- .debug_str     0x0010b423      0x262 mdw/ugfx/src/gdisp/mcufont/mf_rlefont.o
+ .debug_str     0x0010b422      0x262 mdw/ugfx/src/gdisp/mcufont/mf_rlefont.o
                                0x9ad5 (size before relaxing)
- .debug_str     0x0010b685       0xf6 mdw/ugfx/src/gdisp/mcufont/mf_scaledfont.o
+ .debug_str     0x0010b684       0xf6 mdw/ugfx/src/gdisp/mcufont/mf_scaledfont.o
                                0x98a6 (size before relaxing)
- .debug_str     0x0010b77b       0xe6 mdw/ugfx/src/gdriver/gdriver.o
+ .debug_str     0x0010b77a       0xe6 mdw/ugfx/src/gdriver/gdriver.o
                                0xc296 (size before relaxing)
- .debug_str     0x0010b861      0x236 mdw/ugfx/src/gevent/gevent.o
+ .debug_str     0x0010b860      0x236 mdw/ugfx/src/gevent/gevent.o
                                0x977d (size before relaxing)
- .debug_str     0x0010ba97      0x31a mdw/ugfx/src/gfile/gfile.o
+ .debug_str     0x0010ba96      0x31a mdw/ugfx/src/gfile/gfile.o
                                0x97d8 (size before relaxing)
- .debug_str     0x0010bdb1      0x1c3 mdw/ugfx/src/gfile/gfile_fs_rom.o
+ .debug_str     0x0010bdb0      0x1c3 mdw/ugfx/src/gfile/gfile_fs_rom.o
                                0xc456 (size before relaxing)
- .debug_str     0x0010bf74      0x112 mdw/ugfx/src/gfx.o
+ .debug_str     0x0010bf73      0x112 mdw/ugfx/src/gfx.o
                                0x95b2 (size before relaxing)
- .debug_str     0x0010c086       0x7b mdw/ugfx/src/ginput/ginput.o
+ .debug_str     0x0010c085       0x7b mdw/ugfx/src/ginput/ginput.o
                                0x94d5 (size before relaxing)
- .debug_str     0x0010c101      0x4a1 mdw/ugfx/src/ginput/ginput_mouse.o
+ .debug_str     0x0010c100      0x4a1 mdw/ugfx/src/ginput/ginput_mouse.o
                                0xcc10 (size before relaxing)
- .debug_str     0x0010c5a2       0xb2 mdw/ugfx/src/gos/gos_raw32.o
+ .debug_str     0x0010c5a1       0xb2 mdw/ugfx/src/gos/gos_raw32.o
                                0x9527 (size before relaxing)
- .debug_str     0x0010c654      0x183 mdw/ugfx/src/gos/gos_x_heap.o
+ .debug_str     0x0010c653      0x183 mdw/ugfx/src/gos/gos_x_heap.o
                                0xc1e2 (size before relaxing)
- .debug_str     0x0010c7d7      0x231 mdw/ugfx/src/gos/gos_x_threads.o
+ .debug_str     0x0010c7d6      0x231 mdw/ugfx/src/gos/gos_x_threads.o
                                0x97cc (size before relaxing)
- .debug_str     0x0010ca08      0x177 mdw/ugfx/src/gqueue/gqueue.o
+ .debug_str     0x0010ca07      0x177 mdw/ugfx/src/gqueue/gqueue.o
                                0x9617 (size before relaxing)
- .debug_str     0x0010cb7f      0x1c0 mdw/ugfx/src/gtimer/gtimer.o
+ .debug_str     0x0010cb7e      0x1c0 mdw/ugfx/src/gtimer/gtimer.o
                                0x97d0 (size before relaxing)
- .debug_str     0x0010cd3f      0x732 mdw/ugfx/src/gwin/gwin.o
+ .debug_str     0x0010cd3e      0x732 mdw/ugfx/src/gwin/gwin.o
                                0xca8a (size before relaxing)
- .debug_str     0x0010d471      0x1ca mdw/ugfx/src/gwin/gwin_button.o
+ .debug_str     0x0010d470      0x1ca mdw/ugfx/src/gwin/gwin_button.o
                                0x9c44 (size before relaxing)
- .debug_str     0x0010d63b      0x1a8 mdw/ugfx/src/gwin/gwin_container.o
+ .debug_str     0x0010d63a      0x1a8 mdw/ugfx/src/gwin/gwin_container.o
                                0x9c30 (size before relaxing)
- .debug_str     0x0010d7e3      0x173 mdw/ugfx/src/gwin/gwin_graph.o
+ .debug_str     0x0010d7e2      0x173 mdw/ugfx/src/gwin/gwin_graph.o
                                0x9cde (size before relaxing)
- .debug_str     0x0010d956       0xd5 mdw/ugfx/src/gwin/gwin_image.o
+ .debug_str     0x0010d955       0xd5 mdw/ugfx/src/gwin/gwin_image.o
                                0x9aca (size before relaxing)
- .debug_str     0x0010da2b      0x17a mdw/ugfx/src/gwin/gwin_label.o
+ .debug_str     0x0010da2a      0x17a mdw/ugfx/src/gwin/gwin_label.o
                                0x9c86 (size before relaxing)
- .debug_str     0x0010dba5      0x1d9 mdw/ugfx/src/gwin/gwin_widget.o
+ .debug_str     0x0010dba4      0x1d9 mdw/ugfx/src/gwin/gwin_widget.o
                                0xc9a7 (size before relaxing)
- .debug_str     0x0010dd7e      0x26d mdw/ugfx/src/gwin/gwin_wm.o
+ .debug_str     0x0010dd7d      0x26d mdw/ugfx/src/gwin/gwin_wm.o
                                0x9e6d (size before relaxing)
- .debug_str     0x0010dfeb      0x1ef platform/f7-disco-gcc/board/trace.o
+ .debug_str     0x0010dfea      0x1ef platform/f7-disco-gcc/board/trace.o
                               0xf7d77 (size before relaxing)
- .debug_str     0x0010e1da     0x4630 platform/f7-disco-gcc/mcu/critical/critical.o
+ .debug_str     0x0010e1d9     0x4630 platform/f7-disco-gcc/mcu/critical/critical.o
                               0xf7ce0 (size before relaxing)
- .debug_str     0x0011280a      0x24f platform/f7-disco-gcc/mcu/hal/uart.o
+ .debug_str     0x00112809      0x24f platform/f7-disco-gcc/mcu/hal/uart.o
                               0xf34d4 (size before relaxing)
- .debug_str     0x00112a59       0xfc ui-gen/gui.o
+ .debug_str     0x00112a58       0xfc ui-gen/gui.o
                                0x9871 (size before relaxing)
- .debug_str     0x00112b55       0xc9 ui-gen/resources_manager.o
+ .debug_str     0x00112b54       0xc9 ui-gen/resources_manager.o
                                0x9676 (size before relaxing)
- .debug_str     0x00112c1e      0xb27 xf/core/behavior.o
+ .debug_str     0x00112c1d      0xb27 xf/core/behavior.o
                                0xd62f (size before relaxing)
- .debug_str     0x00113745      0x185 xf/core/initialevent.o
+ .debug_str     0x00113744      0x185 xf/core/initialevent.o
                                0x2d0b (size before relaxing)
- .debug_str     0x001138ca      0x16d xf/core/nulltransition.o
+ .debug_str     0x001138c9      0x16d xf/core/nulltransition.o
                                0x6f89 (size before relaxing)
- .debug_str     0x00113a37      0x212 xf/core/timeout.o
+ .debug_str     0x00113a36      0x212 xf/core/timeout.o
                                0x2e07 (size before relaxing)
- .debug_str     0x00113c49      0x6fa xf/port/default/dispatcher-default.o
+ .debug_str     0x00113c48      0x6fa xf/port/default/dispatcher-default.o
                                0xd8b7 (size before relaxing)
- .debug_str     0x00114343     0x4430 xf/port/default/eventqueue-default.o
+ .debug_str     0x00114342     0x4430 xf/port/default/eventqueue-default.o
                                0xb9c5 (size before relaxing)
- .debug_str     0x00118773      0x1df xf/port/default/mutex-default.o
+ .debug_str     0x00118772      0x1df xf/port/default/mutex-default.o
                                0x6eb2 (size before relaxing)
- .debug_str     0x00118952      0x3ac xf/port/default/resourcefactory-default.o
+ .debug_str     0x00118951      0x3ac xf/port/default/resourcefactory-default.o
                                0x7b7d (size before relaxing)
- .debug_str     0x00118cfe     0x3d95 xf/port/default/timeoutmanager-default.o
+ .debug_str     0x00118cfd     0x3d95 xf/port/default/timeoutmanager-default.o
                               0x15f3a (size before relaxing)
- .debug_str     0x0011ca93       0xa7 xf/port/default/xf-default.o
+ .debug_str     0x0011ca92       0xa7 xf/port/default/xf-default.o
                                0x7f1e (size before relaxing)
- .debug_str     0x0011cb3a       0x6d xf/port/idf-stm32cube/port-functions.o
+ .debug_str     0x0011cb39       0x6d xf/port/idf-stm32cube/port-functions.o
                               0xf3899 (size before relaxing)
 
 .comment        0x00000000       0x7f
