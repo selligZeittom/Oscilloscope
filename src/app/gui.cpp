@@ -99,7 +99,8 @@ void Gui::drawGraphPoints(uint16_t * values, uint16_t count,
 				{
 					biggestVal = val;
 				}
-				if (isRedLedEnabled()) {
+				if (isRedLedEnabled()) //checks whether the trigger is selected or not
+				{
 					if((val > threshold - 100 && val < threshold + 100) || startValueFound)
 					{
 						startValueFound = true;
