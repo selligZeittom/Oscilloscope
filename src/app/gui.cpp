@@ -88,7 +88,7 @@ void Gui::drawGraphPoints(uint16_t * values, uint16_t count,
 
 			//amount of values that should be ignored when the trigger is selected
 			int nValIgnored = 0;
-			int threshold = 100;
+			int threshold = 1000;
 			bool startValueFound = false;
 			int biggestVal = 0;
 
@@ -100,10 +100,10 @@ void Gui::drawGraphPoints(uint16_t * values, uint16_t count,
 					biggestVal = val;
 				}
 				if (isRedLedEnabled()) {
-					if(val > threshold || startValueFound)
+					if((val > threshold - 100 && val < threshold + 100) || startValueFound)
 					{
 						startValueFound = true;
-						points[i-nValIgnored].x = i * xScale;
+						points[i-nValIgnored].x = (i-nValIgnored) * xScale;
 						points[i-nValIgnored].y = val * MAX_HEIGHT / 4096;      // Scaling
 					} else {
 						nValIgnored++;
