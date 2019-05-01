@@ -1,0 +1,31 @@
+Questions about the Oscilloscope : 
+
+task6
+1) -	no chance with the XF, because an XF is asynchronous
+	-	well a RTOS would be a more accurate with a high priorized thread, but still not the best idea 
+	-	the best way is to use the ADC with a HW timer
+2) yes it is, because the human eye does not need a very accurate timing (around 25 Hz is the fastest changes that it can see). this means that we can easily use an XF or a low priority thread for that purpose
+3) the ADC conversion is triggered by the HW timer, and the display is refreshed by the XF.
+
+task7
+1) the adc should work at 10kHz (even if theory says that 2kHz should work) so that we have a nice signal on the screen
+2) we could put a filter on the input, but it's not necessary. it would be necessary on the output of a DAC if we wanted to play a sound. its frequency would be at the sampling frequency.
+3) the sampling rate should be bigger than the nyquist frequency, so we can view the signal on the screen
+4) ADC3-IN0
+5)yes thanks to the "continuous conersion mode"
+
+task13
+1) it works not too bad but not perfectly (freeze) @200kHz, and @360kHz it doesn't work
+2) the ADC is not the problem as it can go up to 2.4 MSPS (mega sample per second)
+
+task14
+1) 
+2) not really (especially because of the 3rd question ;-) ). but still no valid reason to use one, because we don't really need a thread with a bigger priority than another one...
+3) for example if we have to use many peripherals that need time but not a accurate timing, such as writing on a SD card, ... so the thread for the XF would have a high priority (because of the SW timers) and threads for the display and the card writer would have a lower priority.
+
+Work done : 
+ 
+ - all the asked task were realized
+ - the trigger function was implemented, and works not too bad, but could be improved (at low frequencies, we must wait quite a lot of time to view the signal on the screen)
+ - the display zoom is currently being implemented
+ - the DMA is not implemented

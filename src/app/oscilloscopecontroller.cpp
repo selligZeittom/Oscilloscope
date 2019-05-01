@@ -89,7 +89,14 @@ void OscilloscopeController::onButtonTimeMinusPressed()
 
 void OscilloscopeController::doShowAnalogSignal()
 {
-	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize, 1);
+	static float coeffs[5];
+	coeffs[oscilloscope::TDIV_500us - 1] = 20; //
+	coeffs[oscilloscope::TDIV_1ms - 1] = 10; //
+	coeffs[oscilloscope::TDIV_2ms - 1] = 5; //
+	coeffs[oscilloscope::TDIV_5ms - 1] = 2; //
+	coeffs[oscilloscope::TDIV_10ms - 1] = 1; //
+
+	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize, coeffs[getTDivValue()]);
 }
 
 std::string OscilloscopeController::getText(oscilloscope::TDivValue tdivValue)
