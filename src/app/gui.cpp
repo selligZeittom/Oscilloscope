@@ -86,27 +86,29 @@ void Gui::drawGraphPoints(uint16_t * values, uint16_t count,
 			gwinGraphDrawAxis(ghGraph);
 			gwinGraphStartSet(ghGraph);
 
-			//amount of values that should be ignored when the trigger is selected
+			// Amount of values that should be ignored when the trigger is selected
 			int nValIgnored = 0;
 			int triggerLevel = 1000;
-		    const int8_t TRIGGER_THRESHOLD = 50;
+			const int8_t TRIGGER_THRESHOLD = 50;
 			bool startValueFound = false;
 			int biggestVal = 0;
+
 
 			// Push values into point array
 			for (uint32_t i = 0; i < MAX; i++) {
 				int val = values[i];
-				if(val>biggestVal)
-				{
+				if (val > biggestVal) {
 					biggestVal = val;
 				}
 				if (isRedLedEnabled()) //checks whether the trigger is selected or not
 				{
-					if((val > triggerLevel - TRIGGER_THRESHOLD && val < triggerLevel + TRIGGER_THRESHOLD && val < values[i+1] && val < values[i+2]) || startValueFound)
-					{
+					if ((val > triggerLevel - TRIGGER_THRESHOLD
+							&& val < triggerLevel + TRIGGER_THRESHOLD
+							&& val < values[i + 1] && val < values[i + 2])
+							|| startValueFound) {
 						startValueFound = true;
-						points[i-nValIgnored].x = (i-nValIgnored) * xScale;
-						points[i-nValIgnored].y = val * MAX_HEIGHT / 4096;      // Scaling
+						points[i - nValIgnored].x = (i - nValIgnored) * xScale;
+						points[i - nValIgnored].y = val * MAX_HEIGHT / 4096; // Scaling
 					} else {
 						nValIgnored++;
 					}
