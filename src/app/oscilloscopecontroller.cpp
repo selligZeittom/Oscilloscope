@@ -7,58 +7,57 @@
 
 OscilloscopeController * OscilloscopeController::_pInstance(nullptr);
 
-const oscilloscope::TDivOption OscilloscopeController::_tdivOptions[] = {{oscilloscope::TDIV_500us, "500 us / div"},
-                                                                         {oscilloscope::TDIV_1ms,     "1 ms / div"},
-                                                                         {oscilloscope::TDIV_2ms,     "2 ms / div"},
-                                                                         {oscilloscope::TDIV_5ms,     "5 ms / div"},
-                                                                         {oscilloscope::TDIV_10ms,   "10 ms / div"}};
+const oscilloscope::TDivOption OscilloscopeController::_tdivOptions[] = { {
+		oscilloscope::TDIV_500us, "500 us / div" }, { oscilloscope::TDIV_1ms,
+		"1 ms / div" }, { oscilloscope::TDIV_2ms, "2 ms / div" }, {
+		oscilloscope::TDIV_5ms, "5 ms / div" }, { oscilloscope::TDIV_10ms,
+		"10 ms / div" } };
 
 OscilloscopeController::OscilloscopeController() :
-    _pGui(nullptr),
-    _adcValuesBuffer(nullptr),
-	_adcValuesBufferSize(0),
-	_tdivValue(oscilloscope::TDIV_1ms)
-{
-    assert(!_pInstance);    // Only one instance of this class allowed!
-    _pInstance = this;
+		_pGui(nullptr), _adcValuesBuffer(nullptr), _adcValuesBufferSize(0), _tdivValue(
+				oscilloscope::TDIV_1ms) {
+	assert(!_pInstance);    // Only one instance of this class allowed!
+	_pInstance = this;
 }
 
 //static
-OscilloscopeController & OscilloscopeController::getInstance()
-{
-    assert(_pInstance);     // Create first an instance!
-    return *_pInstance;
+OscilloscopeController & OscilloscopeController::getInstance() {
+	assert(_pInstance);     // Create first an instance!
+	return *_pInstance;
 }
 
-void OscilloscopeController::initialize(oscilloscope::Gui & gui, uint16_t * adcValuesBuffer, uint32_t adcValuesBufferSize)
-{
-    _pGui = &gui;
-    _adcValuesBuffer = adcValuesBuffer;
-    _adcValuesBufferSize = adcValuesBufferSize;
+void OscilloscopeController::initialize(oscilloscope::Gui & gui,
+		uint16_t * adcValuesBuffer, uint32_t adcValuesBufferSize) {
+	_pGui = &gui;
+	_adcValuesBuffer = adcValuesBuffer;
+	_adcValuesBufferSize = adcValuesBufferSize;
 
-    gui.registerObserver(this);     // Get notified about GUI events
+	gui.registerObserver(this);     // Get notified about GUI events
+
+	float coeff_1ms = 5.55;
+	coeffs[oscilloscope::TDIV_1ms - 1] = coeff_1ms; 		// xScale @ 1ms / div
+	coeffs[oscilloscope::TDIV_500us - 1] = 2 * coeff_1ms; 	// xScale @ 500us / div
+	coeffs[oscilloscope::TDIV_2ms - 1] = coeff_1ms / 2; 	// xScale @ 2ms / div
+	coeffs[oscilloscope::TDIV_5ms - 1] = coeff_1ms / 5; 	// xScale @ 5ms / div
+	coeffs[oscilloscope::TDIV_10ms - 1] = coeff_1ms / 10;	// xScale @ 10ms / div
 }
 
-void OscilloscopeController::start()
-{
-    startBehavior();
+void OscilloscopeController::start() {
+	startBehavior();
 }
 
-XFEventStatus OscilloscopeController::processEvent()
-{
-    assert(_adcValuesBuffer);
-    assert(_adcValuesBufferSize > 0);
+XFEventStatus OscilloscopeController::processEvent() {
+	assert(_adcValuesBuffer);
+	assert(_adcValuesBufferSize > 0);
 
-	if (getCurrentEvent()->getEventType() == XFEvent::Initial)
-	{
+	if (getCurrentEvent()->getEventType() == XFEvent::Initial) {
 		scheduleTimeout(TIMEOUT_ID, TIMEOUT_INTERVAL);
 
 		doShowAnalogSignal();
 	}
 
-	if (getCurrentEvent()->getEventType() == XFEvent::Timeout &&
-		getCurrentTimeout()->getId() == TIMEOUT_ID)
-	{
+	if (getCurrentEvent()->getEventType() == XFEvent::Timeout
+			&& getCurrentTimeout()->getId() == TIMEOUT_ID) {
 		scheduleTimeout(TIMEOUT_ID, TIMEOUT_INTERVAL);
 
 		doShowAnalogSignal();
@@ -67,48 +66,34 @@ XFEventStatus OscilloscopeController::processEvent()
 	return XFEventStatus::Consumed;
 }
 
-void OscilloscopeController::onButtonTimePlusPressed()
-{
-    if (_tdivValue < (oscilloscope::TDIV_MAX - 1))
-    {
-        _tdivValue = (oscilloscope::TDivValue)(_tdivValue + 1);
+void OscilloscopeController::onButtonTimePlusPressed() {
+	if (_tdivValue < (oscilloscope::TDIV_MAX - 1)) {
+		_tdivValue = (oscilloscope::TDivValue) (_tdivValue + 1);
 
-        gui().setTimeDivisionText(getText(_tdivValue));
-    }
+		gui().setTimeDivisionText(getText(_tdivValue));
+	}
 }
 
-void OscilloscopeController::onButtonTimeMinusPressed()
-{
-    if (_tdivValue > (oscilloscope::TDIV_MIN + 1))
-    {
-        _tdivValue = (oscilloscope::TDivValue)(_tdivValue - 1);
+void OscilloscopeController::onButtonTimeMinusPressed() {
+	if (_tdivValue > (oscilloscope::TDIV_MIN + 1)) {
+		_tdivValue = (oscilloscope::TDivValue) (_tdivValue - 1);
 
-        gui().setTimeDivisionText(getText(_tdivValue));
-    }
+		gui().setTimeDivisionText(getText(_tdivValue));
+	}
 }
 
-void OscilloscopeController::doShowAnalogSignal()
-{
-	static float coeffs[5];
-	coeffs[oscilloscope::TDIV_500us - 1] = 20; //
-	coeffs[oscilloscope::TDIV_1ms - 1] = 10; //
-	coeffs[oscilloscope::TDIV_2ms - 1] = 5; //
-	coeffs[oscilloscope::TDIV_5ms - 1] = 2; //
-	coeffs[oscilloscope::TDIV_10ms - 1] = 1; //
-
-	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize, coeffs[getTDivValue()]);
+void OscilloscopeController::doShowAnalogSignal() {
+	gui().drawGraphPoints(_adcValuesBuffer, _adcValuesBufferSize,
+			coeffs[getTDivValue()]);
 }
 
-std::string OscilloscopeController::getText(oscilloscope::TDivValue tdivValue)
-{
-    const uint32_t count = sizeof(_tdivOptions)/sizeof(_tdivOptions[0]);
+std::string OscilloscopeController::getText(oscilloscope::TDivValue tdivValue) {
+	const uint32_t count = sizeof(_tdivOptions) / sizeof(_tdivOptions[0]);
 
-    for (uint32_t i = 0; i < count; i++)
-    {
-        if (_tdivOptions[i].tdivValue == tdivValue)
-        {
-            return _tdivOptions[i].text;
-        }
-    }
-    return "n/a";
+	for (uint32_t i = 0; i < count; i++) {
+		if (_tdivOptions[i].tdivValue == tdivValue) {
+			return _tdivOptions[i].text;
+		}
+	}
+	return "n/a";
 }

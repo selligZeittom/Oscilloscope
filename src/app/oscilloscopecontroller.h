@@ -72,6 +72,8 @@ protected:
 	oscilloscope::TDivValue _tdivValue;
 
 	static const oscilloscope::TDivOption _tdivOptions[];
+	float coeffs[5];
+
 };
 
 #endif // OSCILLOSCOPECONTROLLER_H
