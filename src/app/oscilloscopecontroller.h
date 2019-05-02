@@ -43,6 +43,7 @@ public:
 
 	inline oscilloscope::TDivValue getTDivValue() const { return _tdivValue; }
 
+
 	// XFReactive interface implementation
 protected:
 	XFEventStatus processEvent() override;
@@ -67,7 +68,7 @@ protected:
 	uint32_t _adcValuesBufferSize;
 
 	const int TIMEOUT_ID = 0;
-	const int TIMEOUT_INTERVAL = 100;
+	const int TIMEOUT_INTERVAL = 200;
 
 	oscilloscope::TDivValue _tdivValue;
 

@@ -27,5 +27,8 @@ Work done :
  
  - all the asked task were realized
  - the trigger function was implemented, and works not too bad, but could be improved (at low frequencies, we must wait quite a lot of time to view the signal on the screen)
- - the display zoom is currently being implemented
+ - the display zoom is working for 500us/div up to 5ms/div, but at 10ms/div it doesn't work at all.
  - the DMA is not implemented
+ 
+ Size of the array
+ considering a maximum time displayed on the screen of 80ms (8 divisions * 10ms/div), and that the ADC works @20kHz, this means that the size of the array should be 80ms * 20000 samples/sec = 1600. let's say it's 2000 so we have a bit a margin 

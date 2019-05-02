@@ -94,7 +94,7 @@ void Gui::drawGraphPoints(uint16_t * values, uint16_t count,
 			int biggestVal = 0;
 
 			// Push values into point array
-			for (uint32_t i = 0; i < MAX; i++) {
+			for (uint32_t i = 0; i < MAX + nValIgnored; i++) {
 				int val = values[i];
 				if (val > biggestVal) {
 					biggestVal = val;
